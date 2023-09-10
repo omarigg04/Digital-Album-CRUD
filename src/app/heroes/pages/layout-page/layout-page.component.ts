@@ -16,6 +16,7 @@ export class LayoutPageComponent {
     { label: 'Listado', icon: 'label', url: './list' },
     { label: 'Añadir', icon: 'add', url: './new-hero' },
     { label: 'Buscar', icon: 'search', url: './search' },
+    { label: 'Tabla', icon: 'table', url: './table' },
   ];
 
   constructor(

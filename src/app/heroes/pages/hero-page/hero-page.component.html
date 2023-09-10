@@ -10,19 +10,19 @@
 
 <div *ngIf="hero; else divLoading" class="grid p-2">
 
-  <mat-card class="col-12 sm:col-6">
+  <mat-card class="col-12 sm:col-6 ">
 
     <mat-card-header>
       <mat-card-title>{{ hero.alter_ego }}</mat-card-title>
       <mat-card-subtitle>{{ hero.superhero }}</mat-card-subtitle>
     </mat-card-header>
 
-
-    <img [src]="hero | heroImage" [alt]="hero.superhero" mat-card-image  />
+    
+    <img [src]="hero | heroImage" [alt]="hero.superhero" mat-card-image  class="w-100"/>
 
   </mat-card>
 
-  <mat-card class="col-12 sm:col-6">
+  <mat-card class="col-12 sm:col-6 pl-2">
 
     <mat-card-header>
       <mat-card-title>Información</mat-card-title>

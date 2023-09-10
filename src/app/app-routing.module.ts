@@ -4,6 +4,7 @@ import { Error404PageComponent } from './shared/pages/error404-page/error404-pag
 
 import { AuthGuard } from './auth/guards/auth.guard';
 import { PublicGuard } from './auth/guards/public.guard';
+import { TableListComponent } from './heroes/pages/table-list/table-list.component';
 
 // dominio.com/
 const routes: Routes = [
@@ -23,6 +24,10 @@ const routes: Routes = [
     path: '404',
     component: Error404PageComponent,
   },
+  // {
+  //   path: 'table',
+  //   component: TableListComponent
+  // },
   {
     path: '',
     redirectTo: 'heroes',

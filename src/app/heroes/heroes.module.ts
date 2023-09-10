@@ -13,6 +13,8 @@ import { SearchPageComponent } from './pages/search-page/search-page.component';
 import { CardComponent } from './components/card/card.component';
 import { HeroImagePipe } from './pipes/hero-image.pipe';
 import { ConfirmDialogComponent } from './components/confirm-dialog/confirm-dialog.component';
+import { TableListComponent } from './pages/table-list/table-list.component';
+import { AgGridModule } from 'ag-grid-angular';
 
 
 @NgModule({
@@ -27,12 +29,14 @@ import { ConfirmDialogComponent } from './components/confirm-dialog/confirm-dial
     // Pipes
     HeroImagePipe,
      ConfirmDialogComponent,
+     TableListComponent,
   ],
   imports: [
     CommonModule,
     ReactiveFormsModule,
     HeroesRoutingModule,
     MaterialModule,
+    AgGridModule,
   ]
 })
 export class HeroesModule { }

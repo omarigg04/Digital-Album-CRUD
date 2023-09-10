@@ -17,7 +17,7 @@ export class LoginPageComponent {
 
   onLogin(): void {
 
-    this.authService.login('fernando@gmail.com','123456')
+    this.authService.login('oigg','Alg-1996')
       .subscribe( user => {
 
         this.router.navigate(['/']);

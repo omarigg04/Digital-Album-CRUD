@@ -5,6 +5,7 @@ import { NewPageComponent } from './pages/new-page/new-page.component';
 import { SearchPageComponent } from './pages/search-page/search-page.component';
 import { ListPageComponent } from './pages/list-page/list-page.component';
 import { HeroPageComponent } from './pages/hero-page/hero-page.component';
+import { TableListComponent } from './pages/table-list/table-list.component';
 
 
 // localhost:4200/heroes
@@ -17,6 +18,7 @@ const routes: Routes = [
       { path: 'search', component: SearchPageComponent },
       { path: 'edit/:id', component: NewPageComponent },
       { path: 'list', component: ListPageComponent },
+      { path: 'table', component: TableListComponent },      
       { path: ':id', component: HeroPageComponent },
       { path: '**', redirectTo: 'list' },
     ]
