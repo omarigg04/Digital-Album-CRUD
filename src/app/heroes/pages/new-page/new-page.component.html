@@ -1,6 +1,6 @@
-<h1>
+<h1 class="pt-4 pl-4">
   {{ currentHero.id ? 'Editar' : 'Agregar' }}
-  héroe
+  Elemento
   <small *ngIf="currentHero.id">{{ currentHero.superhero }}</small>
 </h1>
 
@@ -92,6 +92,7 @@
           <span></span>
 
           <button
+            routerLink="table"
             mat-flat-button
             color="primary"
             (click)="onSubmit()"
@@ -107,8 +108,8 @@
 
   <div class="col-12 sm:col-6">
 
-    <mat-card>
-      <img [src]="currentHero | heroImage" alt="imagen del héroe" mat-card-image>
+    <mat-card class="flex col-2" style="width: 50%;">
+      <img [src]="currentHero | heroImage" alt="imagen del héroe" mat-card-image >
     </mat-card>
 
   </div>

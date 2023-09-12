@@ -15,6 +15,8 @@ import { HeroImagePipe } from './pipes/hero-image.pipe';
 import { ConfirmDialogComponent } from './components/confirm-dialog/confirm-dialog.component';
 import { TableListComponent } from './pages/table-list/table-list.component';
 import { AgGridModule } from 'ag-grid-angular';
+import { AddElementDialogComponent } from './pages/table-list/add-element-dialog/add-element-dialog.component';
+import { TableActionsComponent } from './pages/table-list/table-actions/table-actions.component';
 
 
 @NgModule({
@@ -25,11 +27,14 @@ import { AgGridModule } from 'ag-grid-angular';
     NewPageComponent,
     SearchPageComponent,
     CardComponent,
+    TableActionsComponent,
 
     // Pipes
     HeroImagePipe,
      ConfirmDialogComponent,
      TableListComponent,
+     AddElementDialogComponent,
+
   ],
   imports: [
     CommonModule,

@@ -1,11 +1,41 @@
-<div class="p-4">
+<div class="">
+  <div class="container p-4">
+
     <h2>Entries Table</h2>
+
+    <div class="buttons">
+      <button 
+      class="mr-4"
+      (click)="deleteElementShow()"
+      type="button" class="btn btn-primary" 
+      mat-flat-button 
+      color="warn"
+      >
+      <mat-icon>delete</mat-icon>
+      Eliminar
+    </button>
+      <button 
+        (click)="openDialog()"
+        type="button" class="btn btn-primary" 
+        mat-flat-button 
+        color="accent"
+        >
+        <mat-icon>plus_one</mat-icon>
+        Agregar
+      </button>
+    </div>
+
+  </div>
+
+  <ag-grid-angular 
+    #agGrid
+    style="width: 100%; height: 500px;" 
+    class="ag-theme-alpine" 
+    [rowData]="rowData"
+    [gridOptions]="gridOptions" 
+    [columnDefs]="columnDefs"
+    >
+  </ag-grid-angular>
+
 </div>
 
-<ag-grid-angular
-style="width: 100%; height: 500px;"
-class="ag-theme-alpine"
-[rowData]="rowData"
-[gridOptions]="gridOptions"
-[columnDefs]="columnDefs"
-></ag-grid-angular>

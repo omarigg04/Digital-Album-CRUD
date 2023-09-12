@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { filter, switchMap, tap } from 'rxjs';
@@ -18,7 +18,8 @@ import { ConfirmDialogComponent } from '../../components/confirm-dialog/confirm-
   ]
 })
 export class NewPageComponent implements OnInit {
-
+  @Output() elementSaved = new EventEmitter<void>();
+  
   public heroForm = new FormGroup({
     id:        new FormControl<string>(''),
     superhero: new FormControl<string>('', { nonNullable: true }),
@@ -85,8 +86,11 @@ export class NewPageComponent implements OnInit {
     this.heroesService.addHero( this.currentHero )
       .subscribe( hero => {
         // TODO: mostrar snackbar, y navegar a /heroes/edit/ hero.id
-        this.router.navigate(['/heroes/edit', hero.id ]);
+        // this.router.navigate(['/heroes/edit', hero.id ]);
+        this.router.navigateByUrl('/heroes/table')
+        this.dialog.closeAll();
         this.showSnackbar(`${ hero.superhero } created!`);
+        // this.elementSaved.emit();
       });
   }
 
@@ -104,18 +108,8 @@ export class NewPageComponent implements OnInit {
         filter( (wasDeleted: boolean) => wasDeleted ),
       )
       .subscribe(() => {
-        this.router.navigate(['/heroes']);
+        this.router.navigate(['/heroes/table']);
       });
-
-    // dialogRef.afterClosed().subscribe(result => {
-    //   if ( !result ) return;
-
-    //   this.heroesService.deleteHeroById( this.currentHero.id )
-    //   .subscribe( wasDeleted => {
-    //     if ( wasDeleted )
-    //       this.router.navigate(['/heroes']);
-    //   })
-    // });
 
   }
 

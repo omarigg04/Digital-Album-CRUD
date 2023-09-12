@@ -1,0 +1,14 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconAdd{
+    vertical-align: middle;
+}
+
+.buttons{
+    width: 15rem;
+    display: flex;
+    justify-content: space-between;
+}
