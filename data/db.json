@@ -9,7 +9,7 @@
   "heroes": [
     {
       "id": "mano",
-      "superhero": "Omar",
+      "superhero": "Omi",
       "publisher": "DC Comics",
       "alter_ego": "Omi",
       "first_appearance": "Never",
@@ -41,42 +41,6 @@
       "alter_ego": "Omi",
       "first_appearance": "Bazar en Guadalajara",
       "characters": "Omar",
-      "alt_img": ""
-    },
-    {
-      "id": "0p5tZN4",
-      "superhero": "5",
-      "publisher": "DC Comics",
-      "alter_ego": "gg",
-      "first_appearance": "ggg",
-      "characters": "gg",
-      "alt_img": ""
-    },
-    {
-      "id": "_1R9VD0",
-      "superhero": "k",
-      "publisher": "Marvel Comics",
-      "alter_ego": "ok",
-      "first_appearance": "oko",
-      "characters": "okokok",
-      "alt_img": ""
-    },
-    {
-      "id": "Rh2jMrF",
-      "superhero": "sfg",
-      "publisher": "DC Comics",
-      "alter_ego": "sdfg",
-      "first_appearance": "sdfg",
-      "characters": "sfg",
-      "alt_img": ""
-    },
-    {
-      "id": "_ehqVJs",
-      "superhero": "444",
-      "publisher": "DC Comics",
-      "alter_ego": "44",
-      "first_appearance": "44",
-      "characters": "444",
       "alt_img": ""
     }
   ]

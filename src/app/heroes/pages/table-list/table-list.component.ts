@@ -32,12 +32,12 @@ export class TableListComponent{
 
   public columnDefs: ColDef[] = [
     // Define las columnas aquí, por ejemplo:
-    { headerName: 'ID', field: 'id', flex: 1},
-    { headerName: 'Superhéroe', field: 'superhero', flex: 1},
-    { headerName: 'Editor', field: 'publisher', flex: 1},
-    { headerName: 'Alter Ego', field: 'alter_ego', flex: 1},
-    { headerName: 'Primera Aparición', field: 'first_appearance', flex: 1},
-    { headerName: 'Personajes', field: 'characters', flex: 1},
+    { headerName: 'ID', field: 'id', minWidth: 100 ,flex: 1},
+    { headerName: 'Superhéroe', field: 'superhero', minWidth: 120, flex: 1},
+    { headerName: 'Editor', field: 'publisher', minWidth: 120, flex: 1},
+    { headerName: 'Alter Ego', field: 'alter_ego', minWidth: 140, flex: 1},
+    { headerName: 'Primera Aparición', field: 'first_appearance', minWidth: 140, flex: 1},
+    { headerName: 'Personajes', field: 'characters', minWidth: 140, flex: 1},
     { headerName: 'Options', 
       field: 'options', 
       cellRenderer: TableActionsComponent,
